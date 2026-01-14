@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SummitScribe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>SummitScribe</h1>
+        <p>Summarize long text with a TextRank engine.</p>
+      </header>
+      <section class="panel">
+        <textarea id="textInput" rows="10" placeholder="Paste a long article..."></textarea>
+        <label>Summary ratio <input id="ratioInput" type="number" step="0.1" value="0.3" /></label>
+        <button id="summarizeButton">Summarize</button>
+      </section>
+      <section class="panel">
+        <h2>Summary</h2>
+        <p id="summary"></p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
